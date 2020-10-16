@@ -39,7 +39,7 @@ public class Principal {
         copyFileUsingStream(fileOriginal, fileCopia);
 
         while(ChronoUnit.SECONDS.between(then, LocalDateTime.now()) <= 60) {
-            hx = hexadecimalAleatorio(8);
+            hx = hexadecimalAleatorio(8); // El valor hexadecimal a modificar si se quiere hacer "valor + Gxxxx"
             hx1 = "\n" + hx;
             file = new File(pPath);
             if(primeraVez) {
